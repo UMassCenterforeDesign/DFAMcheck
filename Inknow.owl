@@ -1,0 +1,1582 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#"
+     xml:base="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:DFAMcheck="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:cpm1="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#"
+     xmlns:cql="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#cql:"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow">
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact1"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild10 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild10">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact10"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild11 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild11">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact11"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact2"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact3"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild4 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild4">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact4"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild5 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild5">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact5"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild6 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild6">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact6"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild7 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild7">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact7"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild8 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild8">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact8"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild9 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AMBuild9">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact9"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#C1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocC1"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#1.2_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature11 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature11">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_cause_of_failure rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overhang"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#warping"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature13 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature13">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_cause_of_failure rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#noHole"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature14 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature14">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature16 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature16">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature16"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#revolve_feature"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature18 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature18">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_cause_of_failure rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#noHole"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#revolve_feature"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#hole"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature1"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#C1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature20 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature20">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature21 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature21">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature20"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#revolve_feature"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature23 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature23">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature24 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature24">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature23"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#oversizePart"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RI1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature4 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature4">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature5 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature5">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_cause_of_failure rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#interfaceWithSubstrate"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#strip-off"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature6 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature6">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature7 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature7">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#circular_edge_transition_feature"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature6"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature8 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature8">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#circular_edge_transition_feature"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature6"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBF"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <obo:BFO_0000067 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocC1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocC1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRI1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRI1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav10 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav10">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav11 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav11">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav12 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav12">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav13 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav13">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav4 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav5 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav6 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav6">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav7 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav7">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav8 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav8">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav9 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav9">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-15.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000404>
+        <obo:IAO_0000405 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</obo:IAO_0000405>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</obo:IAO_0000406>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RI1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RI1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRI1"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#irregular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP1"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#15_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP2"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#RP3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LocRP3"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#Ti6Al4V"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact10 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact10">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature19"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature20"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact11 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact11">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature22"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature23"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature24"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#250_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#300_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildSuccess"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact4 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact4">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact5 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact5">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildSuccess"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature6"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature7"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact6 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact6">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature10"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature11"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact7 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact7">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature12"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact8 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact8">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature14"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature15"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact9 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#artifact9">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature17"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Feature18"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav1"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav10 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav10">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav10"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#2_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav11 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav11">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav11"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav12 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav12">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav12"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav13 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav13">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#4_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav13"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav2"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav3"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav4 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav4">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav4"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav5 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav5">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#4_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav5"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav6 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav6">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav6"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav7 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav7">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav7"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav8 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav8">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav8"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav9 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cav9">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav9"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv1"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#5_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinderQuarterNegative"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#conv2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locconv2"/>
+        <DFAMcheck:has_radius_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#5_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinderQuarterNegative"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinderQuarterNegative -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinderQuarterNegative"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#interfaceWithSubstrate -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#interfaceWithSubstrate"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#irregular -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#irregular"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#noHole -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#noHole"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh1 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh1">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh1"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#70_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh2"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh3 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overh3">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Locoverh3"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism"/>
+        <DFAMcheck:has_alpha_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_alpha_angle_value>
+        <DFAMcheck:has_beta_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_beta_angle_value>
+        <DFAMcheck:has_gamma_angle_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DFAMcheck:has_gamma_angle_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#oversizePart -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#oversizePart"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#strip-off -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#strip-off"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#warping -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#warping"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#1.2_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#1.2_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#10_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#15_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#15_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#2_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#2_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#20_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#200_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#250_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#250_mm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">250.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">250 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#30_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#300_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#300_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#4_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#4_mm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#5_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#5_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#50_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#70_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#70_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#80_mm">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80 mm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#AMBuild12 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#AMBuild12">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <obo:IAO_0000136 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#artifact12"/>
+        <obo:RO_0000056 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#extrude"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature26 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature26">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature27 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature27">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#depression"/>
+        <DFAMcheck:has_failure_mode rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder-trapped"/>
+        <DFAMcheck:has_front_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_parent rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_right_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <DFAMcheck:has_top_neighbor rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature26"/>
+        <cpm1:has_Form rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#artifact12 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#artifact12">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <DFAMcheck:has_build_outcome rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure"/>
+        <DFAMcheck:has_height_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_length_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:has_width_measurement_datum rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#100_mm"/>
+        <DFAMcheck:uses_material rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V"/>
+        <DFAMcheck:utilizes rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBF1"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature25"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature26"/>
+        <cpm1:has_Feature rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#Feature27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav14 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav14">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav11"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav15 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav15">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav12"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav16 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#cav16">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <DFAMcheck:has_location rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Loccav13"/>
+        <cpm1:has_Geometry rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#12.56_mm2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#12.56_mm2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm2"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">56.0</DFAMcheck:has_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#40_mm2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Inknow#40_mm2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_measurement_datum"/>
+        <obo:IAO_0000039 rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm2"/>
+        <DFAMcheck:has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</DFAMcheck:has_value>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 mm</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1852 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#"
+     xml:base="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cql="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#cql:">
+    <owl:Ontology rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl">
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl"/>
+        <rdfs:comment>Author: Shreyas , Date 12/1/2017</rdfs:comment>
+        <rdfs:comment>Process Signature Ontology based on PennState AM ontology. Some of the classes have been made BFO conformal - some are yet to be moved, updates being made on requirement basis for faster usability of information</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#functionOf -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#influences -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#requiresAssumption -->
+
+    <owl:ObjectProperty rdf:about="http://siam.nist.gov/AM-Ontology_v2#requiresAssumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Influences"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#optical_behavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfAbsorbedHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Absorptivity defines the amount or fraction of radiation energy captured by an irradiated body.</rdfs:comment>
+        <rdfs:comment>The absorption coefficient quantifies the amount of irradiation that is absorbed by the powder bed. Its value can be determined experimentally or through computational simulation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Constant -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Constant">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>a constant refers to a variable with a fixed value assigned to it.</obo:IAO_0000115>
+        <rdfs:label>constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Digital_twin -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Digital_twin">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#descriptive_information_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#technical_model"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>digital twin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#complex_unit_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#complex_unit_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#descriptive_information_entity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#descriptive_information_entity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>descriptive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#dimensions -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#dimensions">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#geometry -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#geometry">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>meltpool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#process_parameter -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#process_parameter">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>process parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#shape -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#shape">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#technical_model -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#technical_model">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#descriptive_information_entity"/>
+        <rdfs:label>technical model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:label>temperature measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_unit -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>temperature unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <rdfs:label>unit symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#AbsorptivityOfParticle -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#AbsorptivityOfParticle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>absorptivity of particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#BedRadiation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#BedRadiation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_behavior"/>
+        <rdfs:label>bed radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#BoltzmannConstant -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#BoltzmannConstant">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Constant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>boltzmann constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#CharacteristicFrequency -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#CharacteristicFrequency">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>characteristic frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#CoolingRate -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#CoolingRate">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>cooling rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#CrystalLatticeConstant -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#CrystalLatticeConstant">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Constant"/>
+        <rdfs:label>crystal lattice constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#DiffuseReflection -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#DiffuseReflection">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#TypeOfReflection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#DiffusionCoefficient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#DiffusionCoefficient">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>diffusion coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#EmissivityOfParticle -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#EmissivityOfParticle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>emmisivity of particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#IdealGasConstant -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#IdealGasConstant">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Constant"/>
+        <rdfs:label>ideal gas constant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#InertGasProperty -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#InertGasProperty">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:comment>Properties of inert gas for metals</rdfs:comment>
+        <rdfs:label>inert gas property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#LatentHeat -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#LatentHeat">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>latent heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#LiquidusTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#LiquidusTemperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>liquidus temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:label>material vendor specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MeltingPoint -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MeltingPoint">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>melting point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#MeltingTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#MeltingTemperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>melting temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#NumberOfPoresPerUnitVolume -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#NumberOfPoresPerUnitVolume">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>number of pores per unit volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#PowderBedDimension -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#PowderBedDimension">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>powder bed dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#PowderDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#PowderDensity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>powder density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#PowderMaterialProperty -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#PowderMaterialProperty">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MaterialProperty"/>
+        <rdfs:label>powder material property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ReflectivityOfParticle -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#ReflectivityOfParticle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>reflectivity of particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SinteringActivationEnergy -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SinteringActivationEnergy">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:comment>Activation energy for an Arrhenius-type sintering equation.</rdfs:comment>
+        <rdfs:label>sintering activation energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SolidusTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SolidusTemperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>solidus temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SpecificHeat -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SpecificHeat">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>specific heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SpecularReflection -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SpecularReflection">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#TypeOfReflection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SpecularReflectivity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SpecularReflectivity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>specular reflectivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>surface convection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#SurfaceTension -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>surface tension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#Temperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#Temperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#DensityDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Thermal conductivity in the powder bed is a function of both temperature and density, and as such needs to be approximated with a model because it cannot be measured during the process.</rdfs:comment>
+        <rdfs:label>thermal conductivity in powder bed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityOfTheBulkMaterial -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityOfTheBulkMaterial">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:label>thermal conductivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#ThermalDiffusivity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#ThermalDiffusivity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#PowderDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SpecificHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityInPowderBed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>thermal diffusivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TuningParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#TuningParameter">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>tuning parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#TypeOfReflection -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#TypeOfReflection">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#DiffuseReflection"/>
+                    <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology-v2#SpecularReflection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#VaporizationTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#VaporizationTemperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#thermal_behavior"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>vaporization temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology-v2#Viscosity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology-v2#Viscosity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:comment>Material viscosity plays an important role not only for prediction of the melt pool dynamics (when melting) but also for viscous sintering (when sintering). Its value cannot be measured and needs to be approximated with material models.</rdfs:comment>
+        <rdfs:label>viscosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamSize -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamSize">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Size of the beam.</rdfs:comment>
+        <rdfs:label>beam size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamType -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamType">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:comment>Whether the beam originates from a laser or an electron beam, and whether the beam is continuous or pulsed.</rdfs:comment>
+        <rdfs:label>beam type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BeamWavelength -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BeamWavelength">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>beam wave length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the build chamber: composition, temperature, pressure.</rdfs:comment>
+        <rdfs:label>build chamber parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChamberTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#BedRadiation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceConvection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Temperature inside the build chamber. Some systems have internal heaters (to prevent residual stresses due to thermal gradients) that allow for a reference chamber temperature to be pre-defined.</rdfs:comment>
+        <rdfs:label>chamber temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ChemicalComposition -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ChemicalComposition">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+        <rdfs:comment>Chemical composition of powder particles, as purchased. 
+All of them could have the same composition, or a combination of different compositions could be used.</rdfs:comment>
+        <rdfs:label>chemical composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#CylindricalDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#CylindricalDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:label>cylindrical distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DendriteGrainOrientation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DendriteGrainOrientation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+        <rdfs:label>dendrite grain orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DendriteOrientation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DendriteOrientation">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MicrostructuralModelPrediction"/>
+        <rdfs:comment>Dendritic growth is dependent on the thermal gradients observed in the process.</rdfs:comment>
+        <rdfs:label>dendrite orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DendriticGrainSizeDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DendriticGrainSizeDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MicrostructuralModelPrediction"/>
+        <rdfs:label>dendritic grain size distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Density -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Density">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label>density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DensityDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DensityDistribution">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#complex_unit_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Density"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>density distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DentriticGrainSize -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DentriticGrainSize">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Microstructure"/>
+        <rdfs:label>dendrite grain size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#DeterministicIrradiation -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#DeterministicIrradiation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>deterministic irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ElasticModulus -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ElasticModulus">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_disposition"/>
+        <rdfs:label>elastic modulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Emissivity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Emissivity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#optical_behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>Characteristics of the machine used in the process.</rdfs:comment>
+        <rdfs:label>equipment parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:label>extinction coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#FluidVelocity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#FluidVelocity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
+        <rdfs:comment>Velocity in the fluid region of the powder bed. It is not measured but it can be approximated with multi-physics models.</rdfs:comment>
+        <rdfs:label>fluid velocity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasComposition -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasComposition">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Chemical composition of protective gas in the build chamber. When processing metals, noble gases are used to protect the liquid from oxidation.</rdfs:comment>
+        <rdfs:label>gas composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GasPressure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GasPressure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BuildChamberParameter"/>
+        <rdfs:comment>Pressure of the protective gas in the build chamber.</rdfs:comment>
+        <rdfs:label>gas pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:label>gaussian distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HatchingDistance -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HatchingDistance">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>The trajectory to be followed by the heat source to scan the surface of a given layer.</rdfs:comment>
+        <rdfs:label>hatching distance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfAbsorbedHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Power used to heat powder when beam is on.</rdfs:comment>
+        <rdfs:label>laser power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#LayerThickness -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#LayerThickness">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:comment>Thickness of layers of powder being spread.</rdfs:comment>
+        <rdfs:label>layer thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MaterialProperty -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MaterialProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:comment>All the material properties including the ones as provided by material vendor, as well as the ones not initially provided and that can only be evaluated by the mean of a model.</rdfs:comment>
+        <rdfs:label>material property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolDepth -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolDepth">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Maximum depth of the melt pool, as measured from the top of the powder bed. It can be measured only after the process has been completed.</rdfs:comment>
+        <rdfs:label>melt pool depth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolLength -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolLength">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>melt pool length</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+        <rdfs:label>melt pool maximum temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolShape -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolShape">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#shape"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Geometry of melt pool as measured either during the process or after.</rdfs:comment>
+        <rdfs:label>meltpool shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ThermalConductivityOfTheSubstrate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>melt pool signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolSignature"/>
+        <rdfs:comment>The temperature in the melt pool, as measured by the means of thermography in some applications. Or it can be approximated through computational multi physics model at the end pof the process.</rdfs:comment>
+        <rdfs:label>melt pool temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+        <rdfs:label>melt pool temperature gradient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MeltPoolWidth -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MeltPoolWidth">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#meltpool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Melt pool width as measured on top surface of powder bed. It can be measured during the process with non-invasive methods, such as thermography.</rdfs:comment>
+        <rdfs:label>meltpool width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MicrostructuralModelPrediction -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MicrostructuralModelPrediction">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>microstructural model predictive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Microstructure -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Microstructure">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolMaximumTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>microstructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#MicrostructureDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#MicrostructureDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MicrostructuralModelPrediction"/>
+        <rdfs:label>microstructure distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#OpticalParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#EquipmentParameter"/>
+        <rdfs:comment>Characteristics of the heat source used for thermally-activated consolidation: Its type (laser or electron beam), power, scanning speed, size.</rdfs:comment>
+        <rdfs:label>optical parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PackingDensity -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PackingDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+        <rdfs:label>packing density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PointSourceDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PointSourceDistribution">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:label>point source distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PoissonsRatio -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PoissonsRatio">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_disposition"/>
+        <rdfs:label>poisson&apos;s ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#process_parameter"/>
+        <rdfs:comment>Distinguishing features required to define a powder bed fusion process.</rdfs:comment>
+        <rdfs:label>powder bed fusion process parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#PowderSizeDistribution">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#MaterialVendorSpecification"/>
+        <rdfs:comment>Size of powder particles used in the process.</rdfs:comment>
+        <rdfs:label>powder size distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ProcessSignature -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>process signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ResidualStressDistribution -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ResidualStressDistribution">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HatchingDistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperatureGradient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#Shrinkage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>residual stress distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Scanning speed when the beam is on.</rdfs:comment>
+        <rdfs:label>scanning speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Shrinkage -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Shrinkage">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#LayerThickness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PackingDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>shrinkage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfAbsorbedHeat -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfAbsorbedHeat">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                        <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://siam.nist.gov/AM-Ontology_v2#VolumetricDistributionOfAbsorbedHeat"/>
+        <rdfs:label>surface distribution of absorbed heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#HeatSourcePower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Laser irradiation 
+
+The process by which an object is exposed to radiation, which in turn is defined as the transmission of energy in the form of waves or particles through space or a medium.
+
+Several different categories (Roberts, 2012) : Point source, Cylindrical, Gaussian, Modified cylindrical, Bell-like radial</rdfs:comment>
+        <rdfs:label>surface distribution of heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#ThermalConductivityOfTheSubstrate -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#ThermalConductivityOfTheSubstrate">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology-v2#ThermalConductivityOfTheBulkMaterial"/>
+        <rdfs:label>thermal conductivity of substrate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#Void -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#Void">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolShape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#MeltPoolTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>void</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://siam.nist.gov/AM-Ontology_v2#VolumetricDistributionOfAbsorbedHeat -->
+
+    <owl:Class rdf:about="http://siam.nist.gov/AM-Ontology_v2#VolumetricDistributionOfAbsorbedHeat">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#absorptivity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#BeamSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ExtinctionCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ScanningSpeed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#functionOf"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>volumetric distribution of absorbed heat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000116>is placed under disposition as absorbed laser power is entirely dependent on process and is realized in process of laser power application to some fiat object part- in this case metal powder</obo:IAO_0000116>
+        <rdfs:label>laser power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:label>crystal structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#DefocusedRadiusOfLaserBeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#DefocusedRadiusOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>radius of defocused laser beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#EffectiveRadiusOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>effective radius of laser beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:label>heat flux of constant density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfDoubleEllipsoidDensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#SurfaceDistributionOfHeat"/>
+        <rdfs:label>heat flux of double ellipsoid density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LaserIntensity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#PowderBedFusionProcessParameter"/>
+        <rdfs:label>laser intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthOfLaserBeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#LengthOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:label>length of laser beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaterialDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaterialDensity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_disposition"/>
+        <rdfs:label>material density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#ProcessSignature"/>
+        <rdfs:label>maximum fluid velocity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MeltPoolAreal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MeltPoolAreal">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:label>melt pool area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ParticleDensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#ParticleDensity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#variable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>particle density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#CoolingRate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>phase composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureAtTime_t">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000581"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000583"/>
+                        <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#Temperature"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>temperature at time t</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureDifference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TemperatureDifference">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_measurement_datum"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/AM-Ontology-v2#SurfaceTension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#MaximumFluidVelocity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Difference between temperature on the top of the melt pool and the solidus temperature</rdfs:comment>
+        <rdfs:label>temperature difference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TensileStrength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#TensileStrength">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>tensile strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#WidthOfLaserBeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#WidthOfLaserBeam">
+        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/AM-Ontology_v2#OpticalParameter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influences"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#HeatFluxOfConstantDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>width of laser beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#YieldStrength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#YieldStrength">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_strength"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#AbsorbedLaserPower"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#Crystal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://siam.nist.gov/AM-Ontology_v2#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/administrator/ontologies/2015/6/PennState-Ontology#PhaseComposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>yield strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#C -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#C">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Celsius -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Celsius">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#F -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#F">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Fahrenheit -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Fahrenheit">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#K -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#K">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#unit_symbol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Kelvin -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#Kelvin">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ProcessSignature1.owl#temperature_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMBuilds">
+        <obo:IAO_0000116>Shreyas: As AM Build relates to information about the build, the machine used, the process implemented as well as process parameters, it is an information content entity relating to actual buils/ artifact</obo:IAO_0000116>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#CylindricalDistribution"/>
+            <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#GaussianDistribution"/>
+            <rdf:Description rdf:about="http://siam.nist.gov/AM-Ontology_v2#PointSourceDistribution"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2183 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#"
+     xml:base="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cql1="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#cql:"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:cpm1="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#"
+     xmlns:cql="http://siam.nist.gov/Database-Navigation-Ontology#cql:"
+     xmlns:FBO2="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FBO2.0.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck">
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FBO2.0.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements.owl"/>
+        <rdfs:comment>Author : Shreyas</rdfs:comment>
+        <rdfs:comment>Author notes: 
+
+Some classes or object properties may have a change of IRI as the ontology is under development</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_area -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_area">
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_measurement_datum"/>
+        <rdfs:label>has area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_back_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_back_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <owl:inverseOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_front_neighbor"/>
+        <rdfs:label>has back neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_bottom_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_bottom_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <owl:inverseOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_top_neighbor"/>
+        <rdfs:label>has bottom neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_build_outcome -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_build_outcome">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+        <rdfs:domain rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome"/>
+        <rdfs:label>has build outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_cause_of_failure -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_cause_of_failure">
+        <rdfs:label>has cause of failure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_child -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_child">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_parent"/>
+        <rdfs:comment>can also be described as has dependent</rdfs:comment>
+        <rdfs:label>has child</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_failure_mode -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_failure_mode">
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#failure_mode"/>
+        <rdfs:label>has failure mode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_front_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_front_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <rdfs:label>has front neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_height_measurement_datum -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_height_measurement_datum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+        <rdfs:label>has height measurement datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_left_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_left_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <owl:inverseOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_right_neighbor"/>
+        <rdfs:label>has left neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_length_measurement_datum -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_length_measurement_datum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ABDO#part"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+        <rdfs:label>has length measurement datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_location -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_location">
+        <rdfs:label>has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor">
+        <rdfs:label>has neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_parent -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_parent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>is dependent upon some entity</rdfs:comment>
+        <rdfs:label>has parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_radius_measurement_datum -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_radius_measurement_datum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum"/>
+        <rdfs:label>has radius measurement datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_recommended_solution -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_recommended_solution">
+        <rdfs:label>has recommended solution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_right_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_right_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <rdfs:label>has right neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sacrificial_feature_outcome -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sacrificial_feature_outcome">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sketch_plane -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sketch_plane">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:label>has sketch plane</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_structure_type -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_structure_type">
+        <rdfs:label>has structure type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_top_neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_top_neighbor">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+        <rdfs:label>has top neighbor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_width_measurement_datum -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_width_measurement_datum">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+        <rdfs:label>has width measurement datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to">
+        <rdfs:label>is normal to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis">
+        <rdfs:label>is oriented along axis</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_parallel_to -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_parallel_to">
+        <rdfs:label>is parallel to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#uses_material -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#uses_material">
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM#portion_of_material"/>
+        <rdfs:label>uses material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#utilizes -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#utilizes">
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM#Machine"/>
+        <rdfs:label>utilizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Behavior -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Behavior">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Feature -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Feature">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Geometry -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Geometry">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Material -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Material">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM#portion_of_material"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Output_Flow -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Output_Flow">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_alpha_angle_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_alpha_angle_value">
+        <rdfs:label>has alpha angle value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_beta_angle_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_beta_angle_value">
+        <rdfs:label>has beta angle value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_gamma_angle_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_gamma_angle_value">
+        <rdfs:label>has gamma angle value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>has portion of material</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x1_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x1_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has left value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x2_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x2_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has right value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y1_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y1_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has front value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y2_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y2_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has back value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z1_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z1_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has bottom value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z2_value -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z2_value">
+        <rdfs:subPropertyOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has top value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/ABDO#part -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ABDO#part">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMBuilds -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMBuilds">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#BJBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#DEDBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MEBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MJBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBFBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#SLBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#VAT-PBuilds"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#utilizes"/>
+                                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMMachine"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>AM Build</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMMachine -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMMachine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#uses_material"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#dimension_constraint"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#BJBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#BJBuilds">
+        <rdfs:label>BJ build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#DED -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#DED">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#DED_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DED machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#DEDBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#DEDBuilds">
+        <rdfs:label>DED build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#EBEAMBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#EBEAMBuilds">
+        <rdfs:label>EBeam build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MEBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MEBuilds">
+        <rdfs:label>ME build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MJBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MJBuilds">
+        <rdfs:label>MJ build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBF -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBF">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#PBF_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>PBF machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBFBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBFBuilds">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#EBEAMBuilds"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBFBuilds"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>PBF build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#SLBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#SLBuilds">
+        <rdfs:label>SL build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#VAT-PBuilds -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#VAT-PBuilds">
+        <rdfs:label>VAT-P build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_Build_description -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_Build_description">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete AM build description</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#manufacturing_process"/>
+        <rdfs:label>AM process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#BJ_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#BJ_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>BJ process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#DED_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#DED_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>DED process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Element -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Element">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#primary_form"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x1_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_x2_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y1_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_y2_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z1_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_z2_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Elementtransition -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Elementtransition">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#descriptive_information_entity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature"/>
+                                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_neighbor"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature"/>
+                                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#transition_feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>element transition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#ME_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#ME_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>ME process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#MJ_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#MJ_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>MJ process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#PBF_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#PBF_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#PBF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>PBF process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#SL_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#SL_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>SL process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VAT_P_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VAT_P_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#AM_process"/>
+        <rdfs:label>VAT-P process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:comment>Temporary class
+to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#aggregateStructures -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#aggregateStructures">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Element"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Elementtransition"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ABDO#part"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>area measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_unit -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <rdfs:label>area unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#back_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#back_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#bottom_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#bottom_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#machine_specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#dimension_constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>build volume constraint specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#curl_effect -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#curl_effect">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#descriptive_information_entity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#descriptive_information_entity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:comment>A class to create a T-box hierarchy of existing build history</rdfs:comment>
+        <rdfs:label>descriptive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#downskin_angle -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#downskin_angle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#downskin_area -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#downskin_area">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#environment -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#environment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:comment>class instantiated to specify the gas in the build chamber for AM process</rdfs:comment>
+        <rdfs:label>environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#failure_mode -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#failure_mode">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>failure mode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_form -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_form">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome"/>
+        <rdfs:label>favorable form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_orientation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_orientation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome"/>
+        <rdfs:label>favorable orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome"/>
+        <rdfs:label>favorable outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_size -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_size">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome"/>
+        <rdfs:label>favorable size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#front_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#front_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#front_plane -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#front_plane">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#x_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>front plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_constraint_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_constraint_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>height constraint specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#height_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>height measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#left_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#left_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#length_constraint_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#length_constraint_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>length constraint specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#machine_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#machine_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#AMMachine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>machine specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#manufacturing_process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#manufacturing_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label>manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#material_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#material_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#machine_specification"/>
+        <rdfs:label>material specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:comment>word needs to be reconsidered and suitable change required</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>equivalent to AM event result</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#predicted_outcome -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#predicted_outcome">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome"/>
+        <rdfs:label>predicted outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#primary_form -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#primary_form">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form"/>
+        <rdfs:label>primary form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#radius_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>radius measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#right_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#right_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#right_plane -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#right_plane">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>right plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#substrate_plate -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#substrate_plate">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/ABDO#part"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#dimension_constraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>a piece of material usually the size of machine build volume specifications often used to allow binding of am material to prevent artifact displacement during operation</rdfs:comment>
+        <rdfs:label>substrate plate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#top_neighbor -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#top_neighbor">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#neighbor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#top_plane -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#top_plane">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>top plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_dimension -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_dimension">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_form -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_form">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+        <rdfs:label>unfavorable form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_orientation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_orientation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+        <rdfs:label>unfavorable orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#outcome"/>
+        <rdfs:label>unfavorable outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_size -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_size">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+        <rdfs:label>unfavorable size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#upskin_angle -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#upskin_angle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#upskin_area -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#upskin_area">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#VDI_terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#void -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#void">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_constraint_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_constraint_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>width constraint specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#width_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>width measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#x_axis -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#x_axis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>x axis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#x_axis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>y axis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#x_axis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#y_axis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM#Machine -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/SIAM#Machine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#CAD_feature -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#CAD_feature">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sketch_plane"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#dimension_constraint -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#dimension_constraint">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#build_volume_constraint_specification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Used to enfore dimensional constraints related to machine capabilities</rdfs:comment>
+        <rdfs:label>dimension constraint</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#hole -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#hole">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_sketch_plane"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_normal_to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Althogh CAD utilizes Y axis as normal to top plane, for ease of use of AM machines -this ontology uses Z axis as perpendicular to top- plane</rdfs:comment>
+        <rdfs:label>sketch plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#voxel -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#voxel">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_length_measurement_datum"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_location"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000403"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Feature"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Form">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_beta_angle_value"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_alpha_angle_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_gamma_angle_value"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#is_oriented_along_axis"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry">
+        <rdfs:label>geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000026"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#LPBFProcess"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#Ti-6Al-4V">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#Ti6Al4V"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#XY_Plane -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#XY_Plane">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#XZ_Plane -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#XZ_Plane">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#YZ_Plane -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#YZ_Plane">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#sketch_plane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildFailure">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+        <rdfs:label>build failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildSuccess -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#buildSuccess">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome"/>
+        <rdfs:label>build success</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#closedloop -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#closedloop"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cone -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cone">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cube -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cube">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylinder">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylindrical -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylindrical">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylindricalPattern -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#cylindricalPattern"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#ellipse -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#ellipse"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#frustum_of_cone -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#frustum_of_cone">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#hemisphere -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#hemisphere">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#hexagonal_prism -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#hexagonal_prism">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm2 -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#mm2">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#area_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overhang -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#overhang">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#failure_mode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#oversized_design -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#oversized_design">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#plate -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#plate">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#potential_form_failure -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#potential_form_failure">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#predicted_outcome"/>
+        <rdfs:label>potential form failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder_fused -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder_fused">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder_trapped -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#powder_trapped">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangularPrism">
+        <owl:sameAs rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangular_prism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangular_prism -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangular_prism">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangular_pyramid -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#rectangular_pyramid">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#slot -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#slot">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#Geometry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#sphere -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#sphere">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#three_d_shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#support_removal_failure -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#support_removal_failure">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_outcome"/>
+        <rdfs:label>support removal failure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#support_removal_success -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#support_removal_success">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#favorable_outcome"/>
+        <rdfs:label>support removal success</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#undersized_feature -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#undersized_feature">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#unfavorable_size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis -->
+
+    <owl:NamedIndividual rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis">
+        <rdf:type rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#BJ">
+        <rdfs:label>BJ machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#EBEAM">
+        <rdfs:label>EBeam machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#LPBF">
+        <rdfs:label>LPBF machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#ME">
+        <rdfs:label>ME machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#MJ">
+        <rdfs:label>MJ machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#SL">
+        <rdfs:label>SL machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#VAT-P">
+        <rdfs:label>VAT P machine</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#z_axis">
+        <rdfs:label>z axis</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/FBO2.0.owl#has_model_element">
+        <rdfs:label>has model element</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#optical_behavior">
+        <rdfs:label>optical behavior</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#CAD_feature_interaction">
+        <rdfs:label>CAD feature interaction constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#absorption">
+        <rdfs:label>absorption constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#algebraic_constraint">
+        <rdfs:label>algebraic constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#attach_constraint">
+        <rdfs:label>attach constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#boundary_clearance">
+        <rdfs:label>boundary clearance constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#boundary_constraint">
+        <rdfs:label>boundary constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#closure">
+        <rdfs:label>closure constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#disconnection">
+        <rdfs:label>disconnection constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#economic_constraint">
+        <rdfs:label>economic constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#geometric">
+        <rdfs:label>geometric constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#geometric_constraint">
+        <rdfs:label>geometric constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#position_and_orientation_constraint">
+        <rdfs:label>position and orientation constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#splitting">
+        <rdfs:label>splitting constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#technologic_constraint">
+        <rdfs:label>technologic constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#topologic">
+        <rdfs:label>topological constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#transmutation">
+        <rdfs:label>transmutation constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#validity_constraint">
+        <rdfs:label>validity constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#volume_clearance">
+        <rdfs:label>volume clearance constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Form_of_Feature">
+        <rdfs:label>has form</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#front_plane"/>
+            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#right_plane"/>
+            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#top_plane"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#additive_volume_feature"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Form"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#f"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VForm#subtractive_volume_feature"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#has_Form"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/DFAMcheck#has_portion_of_material"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#f"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

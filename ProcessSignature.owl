@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#"
+     xml:base="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
+        <owl:imports rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl"/>
+        <rdfs:comment>Author Shreyas</rdfs:comment>
+        <rdfs:comment>Though most of the signature classes are placed under dispostion- most of the subclasses under those signatures would eventually define the axioms for those specific classes.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Flow_Pattern -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Flow_Pattern">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#InertGasFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Flow_Rate -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Flow_Rate">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#InertGasFlow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#InertGasFlow -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#InertGasFlow">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserBeamDiameter -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserBeamDiameter">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserBeamVelocity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserBeamVelocity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserPower -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#LaserPower">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Layer_thickness_Variation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Layer_thickness_Variation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Scanning_Pattern -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#Scanning_Pattern">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#absorptivity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#absorptivity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>absorptivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#build_plate -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#build_plate">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>build plate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#crystal_structure -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#crystal_structure">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#microstructure"/>
+        <rdfs:label>crystal structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#data_about_process_measurements">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>data about process measurements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometric_deviations -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometric_deviations">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product final geometric deviations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometric_irregularity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometric_irregularity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+        <rdfs:label>track geometric irregularity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometry -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometry">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#meltpool_signature"/>
+        <rdfs:label>meltpool geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>inert gas flow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow_pattern -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow_pattern">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow"/>
+        <rdfs:label>inert gas flow pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow_rate -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow_rate">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#inert_gas_flow"/>
+        <rdfs:label>inert gas flow rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_beam_diameter -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_beam_diameter">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>laser beam diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_beam_velocity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_beam_velocity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>laser beam velocity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_power -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#laser_power">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>laser power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_defects -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_defects">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer defects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_geometric_irregularity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_geometric_irregularity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer geometric irregularity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_microstructure -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_microstructure">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer microstructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_residual_stresses -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_residual_stresses">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer residual stresses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_thickness -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_thickness">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>layer thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_thickness_variation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_thickness_variation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>layer thickness variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>layer track</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_unmelted_particles -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_unmelted_particles">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer unmelted particles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_voids -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_voids">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#layer_track"/>
+        <rdfs:label>layer voids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#length_behind_max_width -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#length_behind_max_width">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometry"/>
+        <rdfs:label>meltpool length behind max width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#max_depth -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#max_depth">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometry"/>
+        <rdfs:label>meltpool max depth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#max_width -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#max_width">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#geometry"/>
+        <rdfs:label>meltpool max width</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_maximum_temperature -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_maximum_temperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature"/>
+        <rdfs:label>meltpool maximum temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature"/>
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#meltpool_signature"/>
+        <rdfs:label>meltpool temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature_gradient -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature_gradient">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#melt_pool_temperature"/>
+        <rdfs:label>meltpool temperature gradient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#meltpool_signature -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#meltpool_signature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>meltpool signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#metal_phase -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#metal_phase">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#microstructure"/>
+        <rdfs:label>metal phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#microstructure -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#microstructure">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#packing_density -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#packing_density">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>packing density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#plume_characteristics -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#plume_characteristics">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#meltpool_signature"/>
+        <rdfs:label>plume characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#powder_size_distribution -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#powder_size_distribution">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>powder size distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_defects -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_defects">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product build defects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_fatigue_resistance -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_fatigue_resistance">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product mechanical fatigue resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_hardness -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_hardness">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product mechanical hardness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_strength -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_strength">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product mechanical strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_toughness -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_mechanical_toughness">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product mechanical toughness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_physical_residual_stresses -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_physical_residual_stresses">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product residual stresses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_porosity -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_porosity">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product porosity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_surface_roughness -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product_surface_roughness">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#product"/>
+        <rdfs:label>product surface roughness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#reflectance -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#reflectance">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>reflectance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#residual_stress -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#residual_stress">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+        <rdfs:label>residual stress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#scanning_pattern -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#scanning_pattern">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#process"/>
+        <rdfs:label>scanning pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#shrinkage -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#shrinkage">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+        <rdfs:label>shrinkage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label>track signature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#unmelted_particle -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#unmelted_particle">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+        <rdfs:label>unmelted particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#void -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#void">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/Ontologies/Framework2.0/ProcessSignature#track_signature"/>
+        <rdfs:label>void</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#compression -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#compression">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#creep -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#creep"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#elongation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#elongation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#fracture -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#fracture"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#rupture -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#rupture">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#structure_behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#yielding -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#yielding">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/MaterialProperty.owl#material_behavior"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

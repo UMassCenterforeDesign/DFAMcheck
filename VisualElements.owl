@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#"
+     xml:base="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements">
+        <owl:versionIRI rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#has_geometry -->
+
+    <owl:ObjectProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#has_geometry">
+        <rdfs:range rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+        <rdfs:comment>has geometry</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>hierarchy or level #</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#FaceLabel -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#FaceLabel">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+        <rdfs:label>face label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Greyscale -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Greyscale">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+        <rdfs:label>greyscale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Nodetype -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Nodetype">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+        <rdfs:label>node type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Normal -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Normal">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+        <rdfs:label>normal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:label>attribute array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>attribute matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#cell_data -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#cell_data">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Greyscale"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#featureIds"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>attribute associated with polyhedra</rdfs:comment>
+        <rdfs:label>cell data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#has_geometry"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>data container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container_array -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container_array">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#cell_data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#face_data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex_data"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>data container array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dimension -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dimension">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3d_file -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3d_file">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container_array"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image_data_container"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle_data_container"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>dream 3d file</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>dream 3d data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#edge -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#edge">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>a collection of edges defined by two vertices forming lines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#edge_data -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#edge_data">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#elementgeometrydataitem"/>
+        <rdfs:comment>attribute data associated with edges</rdfs:comment>
+        <rdfs:label>edge data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#visualization_part"/>
+        <rdfs:label>visual element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#elementgeometrydataitem -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#elementgeometrydataitem">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#ensemble -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#ensemble">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#visualization_part"/>
+        <rdfs:label>ensemble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#ensemble_data_item -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#ensemble_data_item">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:label>ensemble data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#face_data -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#face_data">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#FaceLabel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Normal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>attribute data associated with polygons</rdfs:comment>
+        <rdfs:label>face data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#featureIds -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#featureIds">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_array"/>
+        <rdfs:label>feature id</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#feature_data_item -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#feature_data_item">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#dream3ddataitem"/>
+        <rdfs:label>feature data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:label>geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>an unstructures, reectilinear grid - composed of pixels in 2d and voxels in 3d</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image_data_container -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image_data_container">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#has_geometry"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>image data container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#line -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#line">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#pixel -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#pixel">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#point -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#point">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#polygon -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#polygon">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#polyhedra -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#polyhedra">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#quad -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#quad">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>a collection of quadrilaterals; one type of surface mesh</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#rectgrid -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#rectgrid">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>an unstructures, reectilinear grid - composed of pixels in 2d and voxels in 3d</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#tetrahedral -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#tetrahedral">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>a collection of tetrahedra; one type of volume mesh</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A collection of triangles, one type of surface mesh</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle_data_container -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle_data_container">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#data_container"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#face_data"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex_data"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#has_geometry"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#triangle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>triangle data container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#geometry"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#hastopology"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A collection of points, commonly referred to as a point cloud</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex_data -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#vertex_data">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#attribute_matrix"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#Nodetype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>attribute data associated with vertices</rdfs:comment>
+        <rdfs:label>vertex data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#visualization_part -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#visualization_part">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:comment>Not an appropriate class name - will be changed in subsequent revisions</rdfs:comment>
+        <rdfs:label>visualization part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#voxel -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#voxel">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/VisualElements#element"/>
+        <rdfs:label>voxel</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
