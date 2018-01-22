@@ -8,6 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cql2="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#cql:"
      xmlns:cql1="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AMMD_Ontology_R1.owl#cql:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -15,8 +16,8 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl"/>
-        <owl:imports rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology"/>
         <rdfs:comment>Author: Shreyas</rdfs:comment>
         <rdfs:comment>SIAM ontology under BFO</rdfs:comment>
     </owl:Ontology>
@@ -48,7 +49,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#AMMachine"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -73,254 +74,9 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#AMMachine"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#AMBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#AMBuilds">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#AMMachine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>additive manufacturing build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#AMMachine -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#AMMachine">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#Machine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#AM_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>additive manufacturing machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#AMMaterial -->
-
-    <owl:Class rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#AMMaterial">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
-        <rdfs:subClassOf rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#AMMaterial"/>
-        <rdfs:label>portion of material</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#AMTests -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#AMTests">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:label>additive manufacturing test measurements</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#BJ -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#BJ">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#binder_jetting_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>binder jetting machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#BJBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#BJBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#BJ"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>binder jetting build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#DED -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#DED">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#directed_energy_deposition_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>directed energy deposition machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#DEDBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#DEDBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#DED"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>directed energy deposition build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#ME -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#ME">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#material_extrusion_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>material extrusion machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#MEBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#MEBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#ME"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>material extrusion build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#MJ -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#MJ">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#material_jetting_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>material jetting machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#MJBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#MJBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#MJ"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>material jetting build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#PBF -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#PBF">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#powder_bed_fusion_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>powder bed fusion machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#PBFBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#PBFBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#PBF"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>powder bed fusion build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#SL -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#SL">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#sheet_lamination_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>sheet lamination machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#SLBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#SLBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#SL"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>sheet lamination build</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#VAT-P -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#VAT-P">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#vat_photopolymerization_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Vat photopolymerization machine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://siam.nist.gov/Database-Navigation-Ontology#VAT-PBuilds -->
-
-    <rdf:Description rdf:about="http://siam.nist.gov/Database-Navigation-Ontology#VAT-PBuilds">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#VAT-P"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>VAT photopolymerization build</rdfs:label>
     </rdf:Description>
     
 
@@ -332,26 +88,11 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://siam.nist.gov/Database-Navigation-Ontology#AMMachine"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>additive manufacturing process is the process of creating artifacts by means of adding material over successive layers to achieve required form. All additive manufactuing process are distinct from one another, but multiple machine manufacturers may rely on same process</obo:IAO_0000115>
         <rdfs:label>additive manufacturing process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#Machine -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#Machine">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#manufacturing_process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>machine</rdfs:label>
     </owl:Class>
     
 
@@ -439,6 +180,280 @@
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#AM_process"/>
         <rdfs:label>vat photopolymerization process</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>additive manufacturing build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#Machine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#AM_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>additive manufacturing machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
+        <rdfs:label>portion of material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label>additive manufacturing test measurements</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#binder_jetting_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>binder jetting machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJBuilds -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>binder jetting build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#directed_energy_deposition_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>directed energy deposition machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DEDBuilds -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DEDBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>directed energy deposition build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#material_extrusion_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>material extrusion machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MEBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MEBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>material extrusion build</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#material_jetting_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>material jetting machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJBuilds -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>material jetting build</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#Machine -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#Machine">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#manufacturing_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#powder_bed_fusion_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>powder bed fusion machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>powder bed fusion build</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#sheet_lamination_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>sheet lamination machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SLBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SLBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>sheet lamination build</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/SIAM#vat_photopolymerization_process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Vat photopolymerization machine</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-PBuilds -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-PBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>VAT photopolymerization build</rdfs:label>
+    </rdf:Description>
     
 
 

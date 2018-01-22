@@ -407,36 +407,6 @@ The IRI had to be changed as import requires IRI same as location from where fil
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds">
-        <cql1:filter>{ &quot;content.amBuildDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine">
-        <cql1:filter>{ &quot;content.amMachineDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMaterial -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMaterial">
-        <cql1:filter>{ &quot;content.amVendorMaterialDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Al6061 -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Al6061">
@@ -702,111 +672,6 @@ The IRI had to be changed as import requires IRI same as location from where fil
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJ -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJ">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;BJ&quot; }</cql1:filter>
-        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
-        <cql1:projection_view>[
-	{
-		&quot;title&quot;: &quot;General Information&quot;,
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Model&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Owner&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Manufacturer&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Purchased in&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Serial #&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Location&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
-			}
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Builds&quot;,
-		&quot;query&quot;: {
-			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-		},
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Build ID&quot;,
-                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
-				&quot;link&quot;: &quot;AMBuilds&quot;
-            }
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Maintenance history&quot;,
-		&quot;data&quot;: [
-          {
-            &quot;name&quot;: &quot;%date%&quot;,
-            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
-            &quot;type&quot;: &quot;array&quot;,
-            &quot;items&quot;: [
-              {
-                &quot;name&quot;: &quot;%date%&quot;,
-                &quot;path&quot;: &quot;date&quot;,
-                &quot;is_title_param&quot;: true
-              },
-              {
-                &quot;name&quot;: &quot;Operator Name&quot;,
-                &quot;path&quot;: &quot;operator.Name&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Operator Title&quot;,
-                &quot;path&quot;: &quot;operator.Title&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Description&quot;,
-                &quot;path&quot;: &quot;description&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
-                &quot;path&quot;: &quot;operator.OperatingHours&quot;
-              }
-
-            ]
-          }
-		]
-	}
-]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;BJ&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#CC480K -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#CC480K">
@@ -850,7 +715,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Ceramics -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Ceramics">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMaterial"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
         <rdfs:comment>An inorganic, nonmetallic solid primarily held in ionic and covalent bonds. The crystallinity of ceramic materials ranges from highly-oriented to semi-crystalline, and often completely amorphous.</rdfs:comment>
     </owl:Class>
     
@@ -859,7 +724,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Chemistry -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Chemistry">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{ &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;CHEMISTRY&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
         <cql1:projection_view>[
@@ -1271,35 +1136,10 @@ The IRI had to be changed as import requires IRI same as location from where fil
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DED -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DED">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DEDBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DEDBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;DED&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Dimensional -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Dimensional">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{ &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;DIMENTIONAL&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
     </owl:Class>
@@ -1749,7 +1589,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#EBEAM -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#EBEAM">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBF"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF"/>
         <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LPBF"/>
     </owl:Class>
     
@@ -1758,7 +1598,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#EBEAMBuilds -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#EBEAMBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBFBuilds"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds"/>
         <cql1:filter>{
 	&quot;documents&quot;: {
 		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
@@ -1921,7 +1761,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#HCF -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#HCF">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{  &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;STRESSCONTROLLEDFATIGURE&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
         <cql1:projection_view>[
@@ -2313,7 +2153,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LCF -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LCF">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{ &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;STRAINCONTROLLEDFATIGUE&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
         <cql1:projection_view>[
@@ -2664,7 +2504,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LPBF -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LPBF">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBF"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF"/>
     </owl:Class>
     
 
@@ -2672,7 +2512,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LPBFBuilds -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#LPBFBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBFBuilds"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds"/>
         <cql1:filter>{
 	&quot;documents&quot;: {
 		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
@@ -3704,220 +3544,10 @@ The IRI had to be changed as import requires IRI same as location from where fil
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#ME -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#ME">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;ME&quot; }</cql1:filter>
-        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
-        <cql1:projection_view>[
-	{
-		&quot;title&quot;: &quot;General Information&quot;,
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Model&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Owner&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Manufacturer&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Purchased in&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Serial #&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Location&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
-			}
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Builds&quot;,
-		&quot;query&quot;: {
-			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-		},
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Build ID&quot;,
-                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
-				&quot;link&quot;: &quot;AMBuilds&quot;
-            }
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Maintenance history&quot;,
-		&quot;data&quot;: [
-          {
-            &quot;name&quot;: &quot;%date%&quot;,
-            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
-            &quot;type&quot;: &quot;array&quot;,
-            &quot;items&quot;: [
-              {
-                &quot;name&quot;: &quot;%date%&quot;,
-                &quot;path&quot;: &quot;date&quot;,
-                &quot;is_title_param&quot;: true
-              },
-              {
-                &quot;name&quot;: &quot;Operator Name&quot;,
-                &quot;path&quot;: &quot;operator.Name&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Operator Title&quot;,
-                &quot;path&quot;: &quot;operator.Title&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Description&quot;,
-                &quot;path&quot;: &quot;description&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
-                &quot;path&quot;: &quot;operator.OperatingHours&quot;
-              }
-
-            ]
-          }
-		]
-	}
-]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MEBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MEBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;ME&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MET -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MET">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJ -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJ">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;MJ&quot; }</cql1:filter>
-        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
-        <cql1:projection_view>[
-	{
-		&quot;title&quot;: &quot;General Information&quot;,
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Model&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Owner&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Manufacturer&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Purchased in&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Serial #&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Location&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
-			}
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Builds&quot;,
-		&quot;query&quot;: {
-			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-		},
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Build ID&quot;,
-                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
-				&quot;link&quot;: &quot;AMBuilds&quot;
-            }
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Maintenance history&quot;,
-		&quot;data&quot;: [
-          {
-            &quot;name&quot;: &quot;%date%&quot;,
-            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
-            &quot;type&quot;: &quot;array&quot;,
-            &quot;items&quot;: [
-              {
-                &quot;name&quot;: &quot;%date%&quot;,
-                &quot;path&quot;: &quot;date&quot;,
-                &quot;is_title_param&quot;: true
-              },
-              {
-                &quot;name&quot;: &quot;Operator Name&quot;,
-                &quot;path&quot;: &quot;operator.Name&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Operator Title&quot;,
-                &quot;path&quot;: &quot;operator.Title&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Description&quot;,
-                &quot;path&quot;: &quot;description&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
-                &quot;path&quot;: &quot;operator.OperatingHours&quot;
-              }
-
-            ]
-          }
-		]
-	}
-]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;MJ&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
     </owl:Class>
     
 
@@ -4137,7 +3767,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Metal -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Metal">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMaterial"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
     </owl:Class>
     
 
@@ -4282,7 +3912,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Optomec -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Optomec">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DED"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED"/>
     </owl:Class>
     
 
@@ -4292,23 +3922,6 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#OxideCeramic">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Ceramics"/>
         <rdfs:comment>Oxides are chemical compounds that contains at least one oxygen atom and one other element in its chemical formula.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBF -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBF">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <rdfs:comment>An additive manufacturing process in which thermal energy selectively fuses regions of a powder bed.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBFBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBFBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
     </owl:Class>
     
 
@@ -4352,7 +3965,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Polymer -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Polymer">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMaterial"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
     </owl:Class>
     
 
@@ -4555,111 +4168,6 @@ The IRI had to be changed as import requires IRI same as location from where fil
 		]
 	}
 ]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SL -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SL">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;SL&quot; }</cql1:filter>
-        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
-        <cql1:projection_view>[
-	{
-		&quot;title&quot;: &quot;General Information&quot;,
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Model&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Owner&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Manufacturer&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Purchased in&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Serial #&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Location&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
-			}
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Builds&quot;,
-		&quot;query&quot;: {
-			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-		},
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Build ID&quot;,
-                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
-				&quot;link&quot;: &quot;AMBuilds&quot;
-            }
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Maintenance history&quot;,
-		&quot;data&quot;: [
-          {
-            &quot;name&quot;: &quot;%date%&quot;,
-            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
-            &quot;type&quot;: &quot;array&quot;,
-            &quot;items&quot;: [
-              {
-                &quot;name&quot;: &quot;%date%&quot;,
-                &quot;path&quot;: &quot;date&quot;,
-                &quot;is_title_param&quot;: true
-              },
-              {
-                &quot;name&quot;: &quot;Operator Name&quot;,
-                &quot;path&quot;: &quot;operator.Name&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Operator Title&quot;,
-                &quot;path&quot;: &quot;operator.Title&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Description&quot;,
-                &quot;path&quot;: &quot;description&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
-                &quot;path&quot;: &quot;operator.OperatingHours&quot;
-              }
-
-            ]
-          }
-		]
-	}
-]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SLBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SLBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;SL&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
     </owl:Class>
     
 
@@ -4947,7 +4455,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Sciaky -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Sciaky">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DED"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED"/>
     </owl:Class>
     
 
@@ -5030,7 +4538,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Surface -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Surface">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{ &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;SURFACE&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
     </owl:Class>
@@ -5040,7 +4548,7 @@ The IRI had to be changed as import requires IRI same as location from where fil
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Tensil -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Tensil">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMTests"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
         <cql1:filter>{  &quot;content.amTestDB.amUnitTest.testType&quot;: &quot;TENSIL&quot; }</cql1:filter>
         <cql1:projection>{&quot;content.amTestDB.amUnitTest.testID&quot;: 1}</cql1:projection>
         <cql1:projection_view>[
@@ -5384,111 +4892,6 @@ UNS: R56400</rdfs:comment>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-P -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-P">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMMachine"/>
-        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;VAT-P&quot; }</cql1:filter>
-        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
-        <cql1:projection_view>[
-	{
-		&quot;title&quot;: &quot;General Information&quot;,
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Model&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Owner&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Manufacturer&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Purchased in&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Serial #&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-			},
-			{
-				&quot;name&quot;: &quot;Location&quot;,
-				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
-			}
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Builds&quot;,
-		&quot;query&quot;: {
-			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
-		},
-		&quot;data&quot;: [
-			{
-				&quot;name&quot;: &quot;Build ID&quot;,
-                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
-				&quot;link&quot;: &quot;AMBuilds&quot;
-            }
-		]
-	},
-	{
-		&quot;title&quot;: &quot;Maintenance history&quot;,
-		&quot;data&quot;: [
-          {
-            &quot;name&quot;: &quot;%date%&quot;,
-            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
-            &quot;type&quot;: &quot;array&quot;,
-            &quot;items&quot;: [
-              {
-                &quot;name&quot;: &quot;%date%&quot;,
-                &quot;path&quot;: &quot;date&quot;,
-                &quot;is_title_param&quot;: true
-              },
-              {
-                &quot;name&quot;: &quot;Operator Name&quot;,
-                &quot;path&quot;: &quot;operator.Name&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Operator Title&quot;,
-                &quot;path&quot;: &quot;operator.Title&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Description&quot;,
-                &quot;path&quot;: &quot;description&quot;
-              },
-              {
-                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
-                &quot;path&quot;: &quot;operator.OperatingHours&quot;
-              }
-
-            ]
-          }
-		]
-	}
-]</cql1:projection_view>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-PBuilds -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-PBuilds">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#AMBuilds"/>
-        <cql1:filter>{
-	&quot;documents&quot;: {
-		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
-	},
-	&quot;query&quot;: {
-		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;VAT-P&quot;
-	}
-}</cql1:filter>
-        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Xline_2000R -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#Xline_2000R">
@@ -5655,6 +5058,605 @@ UNS: R56400</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds">
+        <cql1:filter>{ &quot;content.amBuildDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial">
+        <cql1:filter>{ &quot;content.amVendorMaterialDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMTests"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;BJ&quot; }</cql1:filter>
+        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
+        <cql1:projection_view>[
+	{
+		&quot;title&quot;: &quot;General Information&quot;,
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Model&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Owner&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Manufacturer&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Purchased in&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Serial #&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Location&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
+			}
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Builds&quot;,
+		&quot;query&quot;: {
+			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+		},
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Build ID&quot;,
+                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
+				&quot;link&quot;: &quot;AMBuilds&quot;
+            }
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Maintenance history&quot;,
+		&quot;data&quot;: [
+          {
+            &quot;name&quot;: &quot;%date%&quot;,
+            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: [
+              {
+                &quot;name&quot;: &quot;%date%&quot;,
+                &quot;path&quot;: &quot;date&quot;,
+                &quot;is_title_param&quot;: true
+              },
+              {
+                &quot;name&quot;: &quot;Operator Name&quot;,
+                &quot;path&quot;: &quot;operator.Name&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Operator Title&quot;,
+                &quot;path&quot;: &quot;operator.Title&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Description&quot;,
+                &quot;path&quot;: &quot;description&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
+                &quot;path&quot;: &quot;operator.OperatingHours&quot;
+              }
+
+            ]
+          }
+		]
+	}
+]</cql1:projection_view>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;BJ&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DEDBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DEDBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;DED&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;ME&quot; }</cql1:filter>
+        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
+        <cql1:projection_view>[
+	{
+		&quot;title&quot;: &quot;General Information&quot;,
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Model&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Owner&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Manufacturer&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Purchased in&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Serial #&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Location&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
+			}
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Builds&quot;,
+		&quot;query&quot;: {
+			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+		},
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Build ID&quot;,
+                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
+				&quot;link&quot;: &quot;AMBuilds&quot;
+            }
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Maintenance history&quot;,
+		&quot;data&quot;: [
+          {
+            &quot;name&quot;: &quot;%date%&quot;,
+            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: [
+              {
+                &quot;name&quot;: &quot;%date%&quot;,
+                &quot;path&quot;: &quot;date&quot;,
+                &quot;is_title_param&quot;: true
+              },
+              {
+                &quot;name&quot;: &quot;Operator Name&quot;,
+                &quot;path&quot;: &quot;operator.Name&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Operator Title&quot;,
+                &quot;path&quot;: &quot;operator.Title&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Description&quot;,
+                &quot;path&quot;: &quot;description&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
+                &quot;path&quot;: &quot;operator.OperatingHours&quot;
+              }
+
+            ]
+          }
+		]
+	}
+]</cql1:projection_view>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MEBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MEBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;ME&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;MJ&quot; }</cql1:filter>
+        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
+        <cql1:projection_view>[
+	{
+		&quot;title&quot;: &quot;General Information&quot;,
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Model&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Owner&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Manufacturer&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Purchased in&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Serial #&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Location&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
+			}
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Builds&quot;,
+		&quot;query&quot;: {
+			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+		},
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Build ID&quot;,
+                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
+				&quot;link&quot;: &quot;AMBuilds&quot;
+            }
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Maintenance history&quot;,
+		&quot;data&quot;: [
+          {
+            &quot;name&quot;: &quot;%date%&quot;,
+            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: [
+              {
+                &quot;name&quot;: &quot;%date%&quot;,
+                &quot;path&quot;: &quot;date&quot;,
+                &quot;is_title_param&quot;: true
+              },
+              {
+                &quot;name&quot;: &quot;Operator Name&quot;,
+                &quot;path&quot;: &quot;operator.Name&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Operator Title&quot;,
+                &quot;path&quot;: &quot;operator.Title&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Description&quot;,
+                &quot;path&quot;: &quot;description&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
+                &quot;path&quot;: &quot;operator.OperatingHours&quot;
+              }
+
+            ]
+          }
+		]
+	}
+]</cql1:projection_view>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;MJ&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#Machine -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#Machine">
+        <cql1:filter>{ &quot;content.amMachineDB&quot;: { &quot;$exists&quot;: true } }</cql1:filter>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF">
+        <rdfs:comment>An additive manufacturing process in which thermal energy selectively fuses regions of a powder bed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL">
+        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;SL&quot; }</cql1:filter>
+        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
+        <cql1:projection_view>[
+	{
+		&quot;title&quot;: &quot;General Information&quot;,
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Model&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Owner&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Manufacturer&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Purchased in&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Serial #&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Location&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
+			}
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Builds&quot;,
+		&quot;query&quot;: {
+			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+		},
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Build ID&quot;,
+                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
+				&quot;link&quot;: &quot;AMBuilds&quot;
+            }
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Maintenance history&quot;,
+		&quot;data&quot;: [
+          {
+            &quot;name&quot;: &quot;%date%&quot;,
+            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: [
+              {
+                &quot;name&quot;: &quot;%date%&quot;,
+                &quot;path&quot;: &quot;date&quot;,
+                &quot;is_title_param&quot;: true
+              },
+              {
+                &quot;name&quot;: &quot;Operator Name&quot;,
+                &quot;path&quot;: &quot;operator.Name&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Operator Title&quot;,
+                &quot;path&quot;: &quot;operator.Title&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Description&quot;,
+                &quot;path&quot;: &quot;description&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
+                &quot;path&quot;: &quot;operator.OperatingHours&quot;
+              }
+
+            ]
+          }
+		]
+	}
+]</cql1:projection_view>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SLBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SLBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;SL&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMachine"/>
+        <cql1:filter>{ &quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;VAT-P&quot; }</cql1:filter>
+        <cql1:projection>{&quot;content.amMachineDB.amMachine.name&quot;: 1}</cql1:projection>
+        <cql1:projection_view>[
+	{
+		&quot;title&quot;: &quot;General Information&quot;,
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Model&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.modelName&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Owner&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.owner&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Manufacturer&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.manufacturer&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Purchased in&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.dateOfMade&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Serial #&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+			},
+			{
+				&quot;name&quot;: &quot;Location&quot;,
+				&quot;path&quot;: &quot;content.amMachineDB.amMachine.location&quot;
+			}
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Builds&quot;,
+		&quot;query&quot;: {
+			&quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;: &quot;content.amMachineDB.amMachine.serialNumber&quot;
+		},
+		&quot;data&quot;: [
+			{
+				&quot;name&quot;: &quot;Build ID&quot;,
+                &quot;path&quot;: &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;,
+				&quot;link&quot;: &quot;AMBuilds&quot;
+            }
+		]
+	},
+	{
+		&quot;title&quot;: &quot;Maintenance history&quot;,
+		&quot;data&quot;: [
+          {
+            &quot;name&quot;: &quot;%date%&quot;,
+            &quot;path&quot;: &quot;content.amMachineDB.amMachine.maintenanceHistory.maintainanceItem&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;items&quot;: [
+              {
+                &quot;name&quot;: &quot;%date%&quot;,
+                &quot;path&quot;: &quot;date&quot;,
+                &quot;is_title_param&quot;: true
+              },
+              {
+                &quot;name&quot;: &quot;Operator Name&quot;,
+                &quot;path&quot;: &quot;operator.Name&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Operator Title&quot;,
+                &quot;path&quot;: &quot;operator.Title&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Description&quot;,
+                &quot;path&quot;: &quot;description&quot;
+              },
+              {
+                &quot;name&quot;: &quot;Maintenance time (hours)&quot;,
+                &quot;path&quot;: &quot;operator.OperatingHours&quot;
+              }
+
+            ]
+          }
+		]
+	}
+]</cql1:projection_view>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-PBuilds -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-PBuilds">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMBuilds"/>
+        <cql1:filter>{
+	&quot;documents&quot;: {
+		&quot;content.amMachineDB.amMachine.serialNumber&quot;: &quot;content.amBuildDB.amBuild.generalInfo.machineSerialNumber&quot;
+	},
+	&quot;query&quot;: {
+		&quot;content.amMachineDB.amMachine.processCategory&quot;: &quot;VAT-P&quot;
+	}
+}</cql1:filter>
+        <cql1:projection>{ &quot;content.amBuildDB.amBuild.generalInfo.buildID&quot;: 1 }</cql1:projection>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5663,30 +5665,6 @@ UNS: R56400</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJ"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DED"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#ME"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJ"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBF"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SL"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-P"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#BJBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#DEDBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MEBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#MJBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#PBFBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#SLBuilds"/>
-            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#VAT-PBuilds"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -5713,6 +5691,30 @@ UNS: R56400</rdfs:comment>
             <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#M280"/>
             <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#M290"/>
             <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology%20imports/AMMD#M400"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJ"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DED"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#ME"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJ"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBF"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SL"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-P"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#BJBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#DEDBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MEBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#MJBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#PBFBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#SLBuilds"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#VAT-PBuilds"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
