@@ -76,6 +76,18 @@ Some classes or object properties may have a change of IRI as the ontology is un
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Behavior -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Behavior">
