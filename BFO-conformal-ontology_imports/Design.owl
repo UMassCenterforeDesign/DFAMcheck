@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl#"
+     xml:base="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl"
+     xmlns:ExtendedRelationOntology="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM"/>
+        <rdfs:comment>Design ontology - for description of process of desgin creation in CAD environment using specification reports</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/CPM.owl#CoreProductModel -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/CPM.owl#CoreProductModel">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#CAD_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#CAD_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:label>CAD specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#assembly_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#assembly_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_specification"/>
+        <rdfs:label>assembly specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#behavior_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#behavior_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>behavior specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_additive_manufacturing -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_additive_manufacturing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM#design_process"/>
+        <rdfs:label>design for additive manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_assembly -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_assembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM#design_process"/>
+        <rdfs:label>design for assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_manufacturing -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_for_manufacturing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM#design_process"/>
+        <rdfs:label>design for manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#design_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>design specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#dimension_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#dimension_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#geometry_specification"/>
+        <rdfs:label>dimension specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#feature_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#feature_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>feature specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#form_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#form_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>form specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#function_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#function_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>function specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#geometry_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#geometry_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>geometry specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_process_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_process_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_specification"/>
+        <rdfs:label>manufacuring process specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#manufacturing_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <rdfs:label>manufacturing specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#metric_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#metric_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>metric specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#orientation_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#orientation_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#geometry_specification"/>
+        <rdfs:label>orientation specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#requirement_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#requirement_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>requirement specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#shape_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#shape_specification">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#geometry_specification"/>
+        <rdfs:label>shape specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#tolerance_specification -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/Design.owl#tolerance_specification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <rdfs:label>tolerance specification</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
