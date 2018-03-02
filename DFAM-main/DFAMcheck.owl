@@ -16,7 +16,7 @@
      xmlns:cql1="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD_Ontology_R1.owl#cql:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:cpm1="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#"
+     xmlns:cpm1="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#"
      xmlns:cql="http://siam.nist.gov/Database-Navigation-Ontology#cql:"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:FBO2="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/FBO2.0.owl#">
@@ -24,9 +24,9 @@
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VisualElements.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/functional%20model%202.0.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/SIAM.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl"/>
         <rdfs:comment>Author : Shreyas</rdfs:comment>
         <rdfs:comment>Author notes: 
@@ -76,54 +76,42 @@ Some classes or object properties may have a change of IRI as the ontology is un
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Behavior -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Behavior -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Behavior">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Behavior">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Feature -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Feature -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Feature">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Feature">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Geometry -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Geometry -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Geometry">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Geometry">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Material -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Material -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Material">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Material">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_material"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Output_Flow -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Output_Flow -->
 
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Output_Flow">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Output_Flow">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
     </owl:ObjectProperty>
     
@@ -800,7 +788,7 @@ Some classes or object properties may have a change of IRI as the ontology is un
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#CAD_feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Geometry"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Geometry"/>
                 <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -844,9 +832,9 @@ Some classes or object properties may have a change of IRI as the ontology is un
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#constraint -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#constraint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
     </owl:Class>
     
@@ -2264,7 +2252,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#volume_clearance">
         <rdfs:label>volume clearance constraint</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Form_of_Feature">
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/cpm1.0.owl#has_Form_of_Feature">
         <rdfs:label>has form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#z_axis">
