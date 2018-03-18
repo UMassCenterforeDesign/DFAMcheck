@@ -20,6 +20,7 @@
         <dc:contributor>Shreyas Patil,
 
 UMass Amherst 2017</dc:contributor>
+        <rdfs:comment>Added a few classes under object class based on EMMO ontology</rdfs:comment>
         <rdfs:comment>A core product model ontology as defined in NIST paper &quot; &quot; . Some of the relations have not been used or have been modified to enable better integration into BFO</rdfs:comment>
     </owl:Ontology>
     
@@ -347,6 +348,15 @@ UMass Amherst 2017</dc:contributor>
     
 
 
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#continuum_object"/>
+        <rdfs:label>portion of material</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#CAD_feature -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#CAD_feature">
@@ -455,7 +465,7 @@ UMass Amherst 2017</dc:contributor>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#is_made_of"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_material"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -531,7 +541,7 @@ UMass Amherst 2017</dc:contributor>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#engineered_object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
@@ -561,6 +571,15 @@ UMass Amherst 2017</dc:contributor>
     
 
 
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#atomic_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#atomic_object">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object"/>
+        <rdfs:label>atomic object</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior">
@@ -575,6 +594,16 @@ UMass Amherst 2017</dc:contributor>
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:label>constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#continuum_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#continuum_object">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object"/>
+        <rdfs:comment>Solid and fluid volume elements</rdfs:comment>
+        <rdfs:label>continuum object</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +626,15 @@ UMass Amherst 2017</dc:contributor>
     
 
 
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#engineered_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#engineered_object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label>engineered object</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#fiat_model_part -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#fiat_model_part">
@@ -610,6 +648,26 @@ UMass Amherst 2017</dc:contributor>
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#flow">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment>Based on EMMO ontology</rdfs:comment>
+        <rdfs:label>material object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#mesoscopic_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#mesoscopic_object">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object"/>
+        <rdfs:comment>Used to define grains within materials</rdfs:comment>
+        <rdfs:label>mesoscopic object</rdfs:label>
     </owl:Class>
     
 
@@ -631,11 +689,11 @@ UMass Amherst 2017</dc:contributor>
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_material -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_engineered_material -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_material">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label>portion of material</rdfs:label>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_engineered_material">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#engineered_object"/>
+        <rdfs:label>portion of engineered material</rdfs:label>
     </owl:Class>
     
 
@@ -672,6 +730,15 @@ UMass Amherst 2017</dc:contributor>
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#subArtifacts">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact"/>
         <rdfs:label>sub artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#subatomic_object -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#subatomic_object">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#material_object"/>
+        <rdfs:label>subatomic object</rdfs:label>
     </owl:Class>
     
 
