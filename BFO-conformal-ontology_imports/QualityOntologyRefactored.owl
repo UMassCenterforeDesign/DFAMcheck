@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored#"
-     xml:base="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored.owl#"
+     xml:base="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored.owl">
         <rdfs:comment>This is a refactored ontology based on Quality ontlology available at https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/QualityOntology.ttl</rdfs:comment>
     </owl:Ontology>
     
