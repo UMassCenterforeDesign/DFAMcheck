@@ -1079,16 +1079,6 @@ Imported into design space ontology to describe virtual design features</rdfs:co
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#other -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#other">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#secondary_form"/>
-        <rdfs:comment>Deprecated because of the open world assumption</rdfs:comment>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#passage -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#passage">
@@ -1210,7 +1200,6 @@ Imported into design space ontology to describe virtual design features</rdfs:co
         <rdfs:comment>As per A hierarchial structure for form features N.N.Z. Gindy.
 
 Most of the forms mentioned seemed to be appropriate for subtractive volume features</rdfs:comment>
-        <rdfs:label>secondary form</rdfs:label>
     </owl:Class>
     
 
