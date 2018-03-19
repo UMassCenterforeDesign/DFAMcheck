@@ -33,9 +33,9 @@ In development- pending vetting</rdfs:comment>
     
 
 
-    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior -->
 
-    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
@@ -265,7 +265,7 @@ In development- pending vetting</rdfs:comment>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#material_behavior -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#material_behavior">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior"/>
         <rdfs:label>material behavior</rdfs:label>
     </owl:Class>
     
@@ -373,7 +373,7 @@ In development- pending vetting</rdfs:comment>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#optical_behavior -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#optical_behavior">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior"/>
     </owl:Class>
     
 
@@ -487,7 +487,7 @@ In development- pending vetting</rdfs:comment>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#structure_behavior -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#structure_behavior">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior"/>
         <rdfs:label>structural behavior</rdfs:label>
     </owl:Class>
     
@@ -523,7 +523,7 @@ In development- pending vetting</rdfs:comment>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#thermal_behavior -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/MaterialProperty.owl#thermal_behavior">
-        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/cpm1.0.owl#behavior"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#behavior"/>
         <rdfs:label>thermal behavior</rdfs:label>
     </owl:Class>
     
