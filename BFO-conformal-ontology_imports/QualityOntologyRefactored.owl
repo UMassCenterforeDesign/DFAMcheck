@@ -7,7 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/QualityOntologyRefactored.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/QualityOntologyRefactored.owl"/>
         <rdfs:comment>This is a refactored ontology based on Quality ontlology available at https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/QualityOntology.ttl</rdfs:comment>
     </owl:Ontology>
     
