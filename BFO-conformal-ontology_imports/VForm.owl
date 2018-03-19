@@ -17,9 +17,9 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/QualityOntologyRefactored.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/DFAMcore.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/QualityOntologyRefactored"/>
         <rdfs:comment>An ontology of Forms in virtual space - typically defined and created using CAD feature operations
 Imported into design space ontology to describe virtual design features</rdfs:comment>
     </owl:Ontology>
