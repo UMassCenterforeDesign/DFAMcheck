@@ -13,6 +13,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:cql2="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#cql:"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/"
      xmlns:cql1="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD_Ontology_R1.owl#cql:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -44,6 +45,12 @@ Some classes or object properties may have a change of IRI as the ontology is un
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067"/>
     
 
 
@@ -274,18 +281,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_length_measurement_datum">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Feature"/>
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Form"/>
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact"/>
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/SIAM#part"/>
-                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#subtractive_volume_feature"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:label>has length measurement datum</rdfs:label>
     </owl:ObjectProperty>
     
@@ -648,60 +643,20 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD_Ontology_R1.owl#Ti6Al4V -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD_Ontology_R1.owl#Ti6Al4V">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#portion_of_engineered_material"/>
     </owl:Class>
     
 
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Feature -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Feature">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_problem"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Feature"/>
     
 
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Form -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Form">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#is_oriented_along_axis"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_beta_angle_value"/>
-                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_alpha_angle_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_gamma_angle_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#is_oriented_along_axis"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Form"/>
     
 
 
@@ -721,9 +676,7 @@ Some classes or object properties may have a change of IRI as the ontology is un
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint"/>
     
 
 
@@ -746,15 +699,7 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#meltpool -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#meltpool">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#DescriptiveInformationContentEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#process_parameter -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#process_parameter">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#process_specification"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#RepresentationalInformationContentEntity"/>
     </owl:Class>
     
 
@@ -763,44 +708,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/SIAM#part">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#CAD_feature -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#CAD_feature">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#fiat_model_part"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_sketch_plane"/>
-                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#sketch_plane"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#is_oriented_along_axis"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tomhagdorn/ontologies/2017/3/model#axis"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#dimension_constraint -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#dimension_constraint">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#constraint_specification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#build_volume_constraint_specification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Used to enfore dimensional constraints related to machine capabilities</rdfs:comment>
-        <rdfs:label>dimension constraint</rdfs:label>
     </owl:Class>
     
 
@@ -823,6 +730,12 @@ Some classes or object properties may have a change of IRI as the ontology is un
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl#geometry_specification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -844,52 +757,10 @@ Some classes or object properties may have a change of IRI as the ontology is un
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#subtractive_volume_feature -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#subtractive_volume_feature">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#CAD_feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#has_Geometry"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#transition_feature -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#transition_feature">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#CAD_feature"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VisualElements#voxel -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VisualElements#voxel">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#fiat_model_part"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#meltpool"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#shape"/>
     </owl:Class>
     
 
@@ -909,15 +780,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_capability">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#capability"/>
         <rdfs:label>AM capability</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_capability_violations -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_capability_violations">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem"/>
-        <rdfs:label>AM capability violations</rdfs:label>
     </owl:Class>
     
 
@@ -945,51 +807,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#DED_process">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_process"/>
         <rdfs:label>DED process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#Element -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#Element">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#primary_form"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_x1_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_x2_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_y1_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_y2_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_z1_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_z2_value"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Feature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>element</rdfs:label>
     </owl:Class>
     
 
@@ -1055,12 +872,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#transition_feature"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>element transition</rdfs:label>
     </owl:Class>
@@ -1128,20 +939,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#Element"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#Elementtransition"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact"/>
                     <owl:Restriction>
@@ -1199,12 +996,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#build_volume_constraint_specification">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#machine_specification"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#dimension_constraint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Build volume constraint specification is an information content entity guiding/ directing the maximum possible volume supported by a given AM machine</rdfs:comment>
         <rdfs:label>build volume constraint specification</rdfs:label>
     </owl:Class>
@@ -1222,38 +1013,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#constraint_specification -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#constraint_specification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/AMMD#AMMaterial"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label>constraint specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#crystal_structure_orientation -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#crystal_structure_orientation">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#microstructure_problems"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1261,7 +1021,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cube -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cube">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1277,24 +1037,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylinder -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylinder">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#density_inclusion -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#density_inclusion">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#microstructure_problems"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#design_problem -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#design_problem">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem"/>
-        <rdfs:label>design problem</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1390,16 +1133,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#frustum_of_a_cone -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#frustum_of_a_cone">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#function_failure_mode -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#function_failure_mode">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem"/>
-        <rdfs:label>function failure mode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1432,7 +1166,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hemisphere -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hemisphere">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1465,7 +1199,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#machine_specification -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#machine_specification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:comment>A machine specification is an information content entity directing the process for initialization of the machine under use</rdfs:comment>
         <rdfs:label>machine specification</rdfs:label>
     </owl:Class>
@@ -1477,21 +1211,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#material_specification">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#machine_specification"/>
         <rdfs:label>material specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#microstructure_problems -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#microstructure_problems">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_cause_of_failure"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/ProcessSignature1.owl#process_parameter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>microstructure problem</rdfs:label>
     </owl:Class>
     
 
@@ -1520,14 +1239,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#porosity -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#porosity">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#microstructure_problems"/>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#predicted_outcome -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#predicted_outcome">
@@ -1537,26 +1248,11 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#predicted_value -->
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#primitive_form -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#predicted_value">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>predicted value</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#primary_form -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#primary_form">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#primitive_form">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Form"/>
-        <rdfs:label>primary form</rdfs:label>
+        <rdfs:label>primitive form</rdfs:label>
     </owl:Class>
     
 
@@ -1564,25 +1260,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#prism -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#prism">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#problem">
-        <rdfs:subClassOf rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/InformationEntityOntology#RepresentationalInformationContentEntity"/>
-        <ExtendedRelationOntology:definition>Problem/ Limitations / Constraint violations are representational entities describing  the state and type of defects arising in some entity. Problems may arise in operation of certain process or in use and manufacture of some independent continuant entity.</ExtendedRelationOntology:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#process_specification -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#process_specification">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#constraint_specification"/>
-        <rdfs:label>process specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1590,7 +1268,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#pyramid -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#pyramid">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1629,25 +1307,10 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#specified_value -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#specified_value">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>specified value</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#sphere -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#sphere">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:Class>
     
 
@@ -1656,12 +1319,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#substrate_plate">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/SIAM#part"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
-                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#dimension_constraint"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>a piece of material usually the size of machine build volume specifications often used to allow binding of am material to prevent artifact displacement during operation</rdfs:comment>
         <rdfs:label>substrate plate</rdfs:label>
     </owl:Class>
@@ -1764,15 +1421,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#upskin_area">
         <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#VDI_terms"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#value_specification -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#value_specification">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <rdfs:label>value specification</rdfs:label>
     </owl:Class>
     
 
@@ -1913,7 +1561,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -1921,23 +1569,21 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cube -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cube">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylinder -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylinder">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylinder"/>
     
 
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylindrical -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cylindrical">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -1957,7 +1603,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#frustum_of_cone -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#frustum_of_cone">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -1965,7 +1611,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hemisphere -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hemisphere">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -1973,7 +1619,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hexagonal_prism -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#hexagonal_prism">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -2016,9 +1662,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#plate -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#plate">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#plate"/>
     
 
 
@@ -2064,7 +1708,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#rectangular_pyramid -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#rectangular_pyramid">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -2077,16 +1721,14 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#slot -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#slot">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#slot"/>
     
 
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#sphere -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#sphere">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#three_d_shape"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#three_d_shape"/>
     </owl:NamedIndividual>
     
 
@@ -2230,6 +1872,10 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     </rdf:Description>
     <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm#volume_clearance">
         <rdfs:label>volume clearance constraint</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VForm.owl#secondary_form">
+        <rdfs:comment>Forms arising out of machining operations are defined as secondary form. These forms can be created using primitive forms as well</rdfs:comment>
+        <rdfs:label>complex form</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/model.owl#is_model_of">
         <rdfs:label>is model of</rdfs:label>
