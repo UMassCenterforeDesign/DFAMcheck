@@ -408,7 +408,7 @@
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ShapeQuality">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
         <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the ratios between dimensions of external features of that bearer.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shape Quality</rdfs:label>
@@ -430,7 +430,7 @@
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality -->
 
     <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/SizeQuality">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
         <CommonCoreOntologies:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Quality that inheres in a bearer in virtue of the bearer&apos;s extension in one or more dimensions.</CommonCoreOntologies:definition>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size Quality</rdfs:label>
@@ -597,6 +597,12 @@
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Width</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Geometry"/>
 </rdf:RDF>
 
 
