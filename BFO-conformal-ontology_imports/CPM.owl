@@ -82,7 +82,6 @@ UMass Amherst 2017</dc:contributor>
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Specifies -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#Specifies">
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#artifact"/>
         <rdfs:label>specifies</rdfs:label>
     </owl:ObjectProperty>
     
@@ -593,7 +592,6 @@ UMass Amherst 2017</dc:contributor>
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl#constraint">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:label>constraint</rdfs:label>
     </owl:Class>
     
 
