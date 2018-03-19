@@ -25,6 +25,7 @@
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Design.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/VisualElements.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/Problem.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/CPM.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/core/master/functional%20model%202.0.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/BFO-conformal-ontology_imports/SIAM.owl"/>
@@ -242,7 +243,6 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_failure_mode -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#has_failure_mode">
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#failure_mode"/>
         <rdfs:label>has failure mode</rdfs:label>
     </owl:ObjectProperty>
     
@@ -778,7 +778,7 @@ Some classes or object properties may have a change of IRI as the ontology is un
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_capability -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#AM_capability">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#capability"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BEM2.0.owl#capability"/>
         <rdfs:label>AM capability</rdfs:label>
     </owl:Class>
     
@@ -1002,14 +1002,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
     
 
 
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#capability -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#capability">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#cone">
@@ -1064,15 +1056,6 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <rdfs:comment>class instantiated to specify the gas in the build chamber for AM process</rdfs:comment>
         <rdfs:label>environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#failure_mode -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#failure_mode">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <rdfs:label>failure mode</rdfs:label>
     </owl:Class>
     
 
@@ -1646,9 +1629,7 @@ to specify and differentiate different effects in AM as per VDI 3405 Blatt 3</rd
 
     <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#overhang -->
 
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#overhang">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#failure_mode"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl#overhang"/>
     
 
 
