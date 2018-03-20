@@ -1,0 +1,2406 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/untitled-ontology-15#"
+     xml:base="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/untitled-ontology-15"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_disposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_disposition"/>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_function -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_function"/>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality"/>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_role -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tom/ontologies/2017/4/design#isMadeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tom/ontologies/2017/4/design#isMadeOf"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessInput -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessInput"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessOutput -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessOutput"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#producesGeometry -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#producesGeometry">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#hasBuildSpeedQuantitative -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#hasBuildSpeedQuantitative">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#hasPowderDiameterQuantitative -->
+
+    <owl:DatatypeProperty rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#hasPowderDiameterQuantitative">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition"/>
+                    <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesGeometry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesGeometry"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesPhase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesPhase"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesProperty"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesMass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesMass"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesVolume"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesDensity -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesDensity"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesGeometry -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesGeometry"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesPhase -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesPhase"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesProperty -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesProperty"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesMass -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesMass"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesVolume -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesVolume"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasAccuracyLower -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasAccuracyLower">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasAccuracyUpper -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasAccuracyUpper">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasSurfaceFinishLower -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasSurfaceFinishLower">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasSurfaceFinishUpper -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasSurfaceFinishUpper">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#BinderJetting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#BinderJetting">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesMass"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesVolume"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialExtrusion"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which a liquid bonding agent is 
+selectively deposited to join powder materials.</obo:IAO_0000115>
+        <rdfs:label>binder jetting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DigitalLightProcessing -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DigitalLightProcessing">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Stereolithography"/>
+        <rdfs:label>digital light processing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DigitalSandCasting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DigitalSandCasting">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#BinderJetting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessInput"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality"/>
+                                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sand"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_role"/>
+                                        <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#binder_role"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PlasterBased"/>
+        <rdfs:label>digital sand casting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialExtrusion"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which focused thermal energy is 
+used to fuse materials by melting as they are being deposited.</obo:IAO_0000115>
+        <rdfs:label>directed energy deposition process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#ElectronBeamMelting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#ElectronBeamMelting">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Melting"/>
+        <rdfs:label>electron beam melting additive process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#FusedDepositionModeling -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#FusedDepositionModeling">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialExtrusion"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a material extrusion process used to make thermoplastic parts through 
+ heated extrusion and deposition of materials layer by layer; term denotes 
+ machines built by Stratasys, Inc.Many other companies produce FDM style 
+ machines that are the same in all but name</obo:IAO_0000115>
+        <rdfs:label>fused deposition modeling process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#IonFusionFormation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#IonFusionFormation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_disposition"/>
+                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology"/>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+        <rdfs:label>ion fusion formation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaminatedObjectManufacturing -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaminatedObjectManufacturing">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_role"/>
+                                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#binder_role"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PaperLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#UltrasonicAdditiveManufacturing"/>
+        <rdfs:label>laminated object manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality"/>
+                                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal"/>
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polymer"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>laser engineered net shaping process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LayerlessAccumulation -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LayerlessAccumulation">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <rdfs:label>layerless accumulation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialExtrusion -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialExtrusion">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Thermoplastic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which material is selectively 
+dispensed through a nozzle or orifice.</rdfs:comment>
+        <rdfs:label>material extrusion additive manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which droplets of build material 
+ are selectively deposited.</rdfs:comment>
+        <rdfs:label>material jetting additive process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Melting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Melting">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering"/>
+        <rdfs:label>melting powder bed fusion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PaperLamination -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PaperLamination">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_role"/>
+                                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#binder_role"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#UltrasonicAdditiveManufacturing"/>
+        <rdfs:label>paper lamination process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Photopolymer -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Photopolymer"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Plaster -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Plaster"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PlasterBased -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PlasterBased">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#BinderJetting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Plaster"/>
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Water"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>plaster binder jetting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Polyjet -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Polyjet">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Photopolymer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/tom/ontologies/2017/4/design#isMadeOf"/>
+                                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Photopolymer"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#WaxPrinter"/>
+        <rdfs:label>polyjetting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal"/>
+                                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polymer"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_quality"/>
+                                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which thermal energy selectively 
+fuses regions of a powder bed.</rdfs:comment>
+        <rdfs:label>powder bed fusion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sand -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sand"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectLaserMelting -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectLaserMelting">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Melting"/>
+        <rdfs:label>selective laser melting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectingHeatSintering -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectingHeatSintering">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering"/>
+        <rdfs:label>selective heat sintering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectiveLaserSintering -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectiveLaserSintering">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering"/>
+        <rdfs:label>selective laser sintering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesMass"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ReducesVolume"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing process in which sheets of material are bonded 
+ to form an object.</rdfs:comment>
+        <rdfs:label>sheet lamination process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#PowderBedFusion"/>
+        <rdfs:label>sintering powder bed fusion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Stereolithography -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Stereolithography">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization"/>
+        <rdfs:label>stereolithography process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#UltrasonicAdditiveManufacturing -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#UltrasonicAdditiveManufacturing">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SheetLamination"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ultrasonic additive manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#VatPhotopolymerization">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Photopolymer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesPhase"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an additive manufacturing pro-cess in which liquid photopolymer in a vat 
+ is selectively cured by light-activated polymerization.</rdfs:comment>
+        <rdfs:label>vat photopolymerization process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Water -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Water"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Wax -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Wax"/>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#WaxPrinter -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#WaxPrinter">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#MaterialJetting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Wax"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>wax printing jetting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#binder_role -->
+
+    <owl:Class rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#binder_role"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    
+
+
+    <!-- http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact -->
+
+    <owl:Class rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#DepositionBasedPrototyping"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#LaserBasedPrototyping"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AdditionProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesGeometry"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1236208666.owl#ChangesProperty"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additive Manufacturing is the standard name for these manufacturing processes per ASTM standard F2792, synonyms incllude; additive fabrication, additive processes,additive techniques, additive layer manufacturing, layer manufacturing, and freeform fabrication.</rdfs:comment>
+        <rdfs:label>additive manufacturing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#Three-DPrinting"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#powder_morphology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down-facing_surface_manufactured_by_selective_laser_melting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down-facing_surface_manufactured_by_selective_laser_melting">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down_facing_surface_specification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:someValuesFrom rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#SelectLaserMelting"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down_facing_surface_specification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tom/ontologies/2017/5/AM_rules#down_facing_surface_specification"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#hole_greater_than_6_mm_for_dmls -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#hole_greater_than_6_mm_for_dmls">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#hole_greater_than_6_mm_for_dmls"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#overhang_greater_than_20_degrees -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#overhang_greater_than_20_degrees"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#overhang_greater_than_20_degrees_for_dmls -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#overhang_greater_than_20_degrees_for_dmls">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#overhang_greater_than_20_degrees"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#radius_less_than_0.5_mm -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#radius_less_than_0.5_mm"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#radius_less_than_0.5_mm_for_DMLS -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#radius_less_than_0.5_mm_for_DMLS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#radius_less_than_0.5_mm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#wall_less_than_1_mm_for_dmls -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#wall_less_than_1_mm_for_dmls">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#wall_less_than_1_mm_thick"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#wall_less_than_1_mm_thick -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/DAMPrO/master/dmls_rules.owl#wall_less_than_1_mm_thick"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#direct_metal_laser_sintering_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#Sintering"/>
+        <rdfs:label>direct metal laser sintering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#material_working_process -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#material_working_process"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#Optomec_LENS_machine -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#Optomec_LENS_machine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hastelloy"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_ofCP_titanium"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_GRCop-84"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_copper-Ni"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel625"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel690"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel718"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel13-8"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel15-5PH"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel17-4"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel304"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel309"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel316"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel410"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel416"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel420"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steelAM355"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stellite_21"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_A-2"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_H13"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_S7"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_22_Al_23_Nb"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-2"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-6"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#LaserEngineeredNetShaping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full#hasMaterial"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-4"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#atomic_diffusion_additive_manufacturing_process -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#atomic_diffusion_additive_manufacturing_process">
+        <rdfs:subClassOf rdf:resource="http://edesign.ecs.umass.edu/ontologies/Framework2.0/AM.owl#DirectedEnergyDeposition"/>
+        <rdfs:label>atomic diffusion additive manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#functional_complexity_capability -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#functional_complexity_capability">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.ontologylibrary.mil/CommonCore/Upper/ExtendedRelationOntology#has_function"/>
+                                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#mass_customization_capability -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#mass_customization_capability">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologylibrary.mil/CommonCore/Mid/ArtifactOntology#Artifact"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#prototype_role -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#prototype_role"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#rapid_prototyping_capability -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#rapid_prototyping_capability">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1236208666.owl#RapidPrototyping"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/ICAM.owl#prototype_role"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AbrasiveCleaning -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AbrasiveCleaning">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing"/>
+        <rdfs:label>abrasive cleaning process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AdditionProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AdditionProcess">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+        <rdfs:label>addition process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AgeHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AgeHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>age hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AirQuenchHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#AirQuenchHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>air quench hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anealing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anealing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating"/>
+        <rdfs:label>annealing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anodizing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anodizing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Austempering -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Austempering">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>austempering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Carbonitriding -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Carbonitriding">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>carbonitriding process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Carburizing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Carburizing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>carburizing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChemicalCleaning -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChemicalCleaning">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing"/>
+        <rdfs:label>chemical cleaning process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChemicalPolishing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChemicalPolishing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polishing"/>
+        <rdfs:label>chemical polishing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Chromizing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Chromizing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>chromizing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing"/>
+        <rdfs:label>coating process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ColdTreatment -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ColdTreatment">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating"/>
+        <rdfs:label>cold treatment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ConsolidationProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ConsolidationProcess">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Cyaniding -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Cyaniding">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>cyaniding process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#DeformationProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#DeformationProcess">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#DiffusionHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#DiffusionHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>diffusion hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ElectroPlating -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ElectroPlating">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ElectroPolishing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ElectroPolishing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polishing"/>
+        <rdfs:label>electro-polishing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Etching -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Etching">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polishing"/>
+        <rdfs:label>etching process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FlameHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FlameHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>flame hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FlameSpraying -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FlameSpraying">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FullAnealing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#FullAnealing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Recrystalization"/>
+        <rdfs:label>full annealing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Galvanizing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Galvanizing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating"/>
+        <rdfs:label>hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hastelloy -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hastelloy"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#NonShapingProcess"/>
+        <rdfs:label>heat treating process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#InductionHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#InductionHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>induction hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#MachiningService"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Martempering -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Martempering">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>martempering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Material"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Metal"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Nitriding -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Nitriding">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening"/>
+        <rdfs:label>nitriding process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#NonShapingProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#NonShapingProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#material_working_process"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesGeometry"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>non-shaping process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#OilQuenchHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#OilQuenchHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>oil quench hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Painting -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Painting">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polishing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polishing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing"/>
+        <rdfs:label>polishing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polymer -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Polymer"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#PowderCoating -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#PowderCoating">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ProcessAnealing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ProcessAnealing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Recrystalization"/>
+        <rdfs:label>process annealing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#RecoveryAnealing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#RecoveryAnealing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anealing"/>
+        <rdfs:label>recovery annealing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Recrystalization -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Recrystalization">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Anealing"/>
+        <rdfs:label>recrystalization process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SandBlasting -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SandBlasting">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing"/>
+        <rdfs:label>sand blasting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/BFO_MSDL.owl#material_working_process"/>
+        <rdfs:label>shaping process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShortCycleAnealing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShortCycleAnealing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Recrystalization"/>
+        <rdfs:label>short cycle annealing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Sintering -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Sintering">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#HeatTreating"/>
+        <rdfs:label>sinerting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SolidificationProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SolidificationProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesPhase"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#StressRelieving -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#StressRelieving">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#RecoveryAnealing"/>
+        <rdfs:label>stress relieving process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SubtractionProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SubtractionProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessInput"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState"/>
+                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasProcessOutput"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#hasMatterState"/>
+                                        <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Solid"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesDensity"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesGeometry"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ChangesProperty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesMass"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ReducesVolume"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceFinishing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#NonShapingProcess"/>
+        <rdfs:label>surface finishing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#SurfaceHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hardening"/>
+        <rdfs:label>surface hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Tempering -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Tempering">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#RecoveryAnealing"/>
+        <rdfs:label>tempering process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThermalWelding -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThermalWelding">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ShapingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Thermoplastic -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Thermoplastic"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Hardening"/>
+        <rdfs:label>through hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#VaporMetalizing -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#VaporMetalizing">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#Coating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#WaterQuenchHardening -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#WaterQuenchHardening">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/MSDL_full.owl#ThroughHardening"/>
+        <rdfs:label>water quench hardening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_ofCP_titanium -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_ofCP_titanium"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_GRCop-84 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_GRCop-84"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_copper-Ni -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_copper-Ni"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel625 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel625"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel690 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel690"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel718 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_inconel718"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel13-8 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel13-8"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel15-5PH -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel15-5PH"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel17-4 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel17-4"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel304 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel304"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel309 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel309"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel316 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel316"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel410 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel410"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel416 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel416"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel420 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steel420"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steelAM355 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stainless_steelAM355"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stellite_21 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_stellite_21"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_A-2 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_A-2"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_H13 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_H13"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_S7 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_of_tool_steel_S7"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_22_Al_23_Nb -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_22_Al_23_Nb"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-2 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-2"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-6 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-2-4-6"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-4 -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UMassCenterforeDesign/ICAM/master/additive%20materials.owl#portion_oftitanium_6-4"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
