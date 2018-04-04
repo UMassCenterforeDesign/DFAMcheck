@@ -1,7 +1,7 @@
 # DFAMcheck
 An ontological framework based on CAD design features to enable checking of design for additive manufacturing 
 
-Note: Upload in progress.... check back in two days for error free access - 
+
 
 Version: 01/22/2018
 Author:Shreyas
