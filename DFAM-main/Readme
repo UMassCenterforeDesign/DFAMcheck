@@ -3,7 +3,7 @@ Note: Vetting in process, some structure may change
 Version: 04/18/2018
 
 
-Please follow step by step instructions to open the following ontologies
+Please follow step by step instructions to open the following ontology:
 
 Using Protege
 1.Start Protege
@@ -14,5 +14,5 @@ Using Protege
 https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl
 
 
-Using other Ontology editor-
-Go to github page and download/clone all the files in folder and open using the respective ontology editor
+Using any other Ontology editor-
+Go to github page and download/clone all the .owl files in this folder and open using the respective ontology editor
