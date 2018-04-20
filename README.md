@@ -1,12 +1,14 @@
 # DFAMcheck
-An ontological framework based on CAD design features to enable checking of design for additive manufacturing 
-
+An ontological framework to query known additive manufacturing capabilities associated to CAD design features 
 
 
 Version: 01/22/2018
-Author:Shreyas
+Author: Shreyas Patil
+Department of Mechanical and Industrial Engineering
+University of Massachusetts at Amherst
+Center for e-Design
 
-Please follow step by step instructions to open the following ontologies
+Please follow step by step instructions to open the following ontology:
 
 Using Protege
 1.Start Protege
@@ -17,5 +19,5 @@ Using Protege
 https://raw.githubusercontent.com/UMassCenterforeDesign/DFAMcheck/master/DFAM-main/DFAMcheck.owl
 
 
-Using other Ontology editor-
-Go to github page and download/clone all the files in folder and open using the respective ontology editor
+Using any other Ontology editor-
+Go to github page and download/clone all the .owl files in this folder and open using the respective ontology editor
